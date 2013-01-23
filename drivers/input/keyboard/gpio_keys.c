@@ -417,6 +417,7 @@ bool gpio_keys_getstate(int keycode)
 	return 0;
 }
 EXPORT_SYMBOL(gpio_keys_getstate);
+
 #endif //CONFIG_SAMSUNG_PRODUCT_SHIP
 
 void gpio_keys_setstate(int keycode, bool bState)
