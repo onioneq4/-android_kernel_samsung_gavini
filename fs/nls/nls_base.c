@@ -114,7 +114,8 @@ int utf32_to_utf8(unicode_t u, u8 *s, int maxlen)
 }
 EXPORT_SYMBOL(utf32_to_utf8);
 
-int utf8s_to_utf16s(const u8 *s, int len, wchar_t *pwcs)
+int utf8s_to_utf16s(const u8 *s, int len, enum utf16_endian endian,
+		wchar_t *pwcs, int maxlen)
 {
 	u16 *op;
 	int size;
